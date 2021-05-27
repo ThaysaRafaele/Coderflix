@@ -1,4 +1,5 @@
-:root{
+:root
+{
     --vermelho:#E50914;
     --preta:#141414;
 }
@@ -10,14 +11,16 @@
 }
 
 /*elementos base*/
-body{
+body
+{
    background: var(--preta);
    font-family: 'Arial', Times, serif;
    color:white;
 }
 
 
-header .container{
+header .container
+{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -25,28 +28,32 @@ header .container{
     
 }
 
-header .logo{
+header .logo
+{
     margin-left: 5px;
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
     font-size:40px;
 }
 
-header nav a{
+header nav a
+{
     text-decoration:none;
     color:#AAA;
     margin-right: 10px;
 }
 
 
-header nav a:hover{
+header nav a:hover
+{
     color:#fff;
 }
 
-/*filme principal*/
-.filme-principal{
+/*video principal*/
+.filme-principal
+{
     font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-house.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/dio-HTM-developer.png');
 
     height:400px;
     background-size:cover;
@@ -58,20 +65,53 @@ header nav a:hover{
     align-items: flex-start;
 }
 
+.alura
+{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) /*,  url('/img/alura-front.png')*/;
+    /* height: 100%; */
+    width: 100%;
 
-.filme-principal .descricao{
+    height:600px;
+    background-size:cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.alura .titulo
+{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.alura .descricao
+{
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
 
-.filme-principal .titulo{
-    margin-top: 15%;
+.filme-principal .descricao
+{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo
+{
+    margin-top: 5%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-.botao{
+.botao
+{
     background-color: rgba(0,0,0,.50);
     border:none;
     color: white;
@@ -84,33 +124,46 @@ header nav a:hover{
     transition: .3s ease all;
 }
 
-.botao:hover{
+.botao:hover
+{
     background-color:white;
     color:black;
 }
 
-.botao i{
+.botao i
+{
     margin-right: 8px;
 }
 
 
-.container{
+.container
+{
     margin-left: 20px;
 }
 
-.filme-principal .container{
+.filme-principal .container
+{
     width: 70%;
 }
 
-.box-filme{
+.box-filme
+{
     height: 100%;
     width: 100%;
     display: block;
     cursor: pointer;
 }
 
+.imgAlura
+{
+    height: 50%;
+    width: 50%;
+    display: block;
+}
 
-.carrosel-filmes{
+
+.carrosel-filmes
+{
     margin-top:5px;
 }
 
